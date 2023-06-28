@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block content%}
+
+    <script src="/static/js/mining.js"></script>
+
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <script type="text/javascript">
+        alert("{{ messages[-1]}} ");
+    </script>
+    {% endif %}
+    {% endwith %}
+
+    <p class="my-3">씨쥬 코인 마이닝을 시작합니다.</p>
+    <p class="my-3">채굴을 시도하는 동안에는 반드시 컴퓨터가 켜져 있어야 합니다.</p>
+    <div class="row my-3">
+        <div class="col-sm">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="miner_wallet_addr">
+                        전자지갑 주소
+                    </span>
+                </div>
+                <input type="text" class="form-control" id="blockchain_addr_input"
+                    value="{{ form.my_blockchain_addr.data or '' }}">
+            </div>
+        </div>
+    </div>
+    <div class="row my-3">
+        <div class="col-sm">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon3">
+                        <div class="btn btn-outline-primary" id="query_coin_status">
+                            내 코인 조회
+                        </div>
+                    </span>
+                </div>
+                <input type="text" class="form-control" id="current_coin_amount"
+                    readonly
+                    value="">
+            </div>
+        </div>
+    </div>    
+    <div class="row my-3" id="after-transfer">
+        <div class="col-sm">
+            <a href="#" class="btn btn-outline-primary" id="start_mining">채굴 시작!</a>
+            
+        </div>
+    </div>
+
+
+{% endblock %}
