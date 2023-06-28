@@ -78,14 +78,16 @@ def run():
     blockchain_node.start()
 
     # print('씨쥬코인 네트워크 노드와 연결을 시도합니다.')
-    connection_count = 0
     db_manager = DatabaseManager()
     nodes = db_manager.get_all_records()
-    
+
     # Seed 노드와 최초 연결 시도
+    print('Seed 블록체인 노드 연결을 시도합니다.')
     seed_node_connect_success = blockchain_node.connect_with_node(config.SEED_SERVER_IP, config.SEED_SERVER_PORT)
     if seed_node_connect_success:
-        print('Seed 블록체인 노드 연결에 성공했습니다.')    
+        print('Seed 블록체인 노드 연결에 성공했습니다.')
+
+    connection_count = 0
     for node in nodes:
         # 자신과는 연결하지 않음
         if (
@@ -97,7 +99,7 @@ def run():
             continue
 
         # 자신과의 연결이 아니라면 메시지 출력하고 연결 시도
-        # print(f'Trying: Me {ip}:{port} ---> Target: {node.ip}:{node.port}', end='\t')
+        # print(f'Trying: Me {ip}:{port} ---> Target: {node.ip}:{node&.port}', end='\t')
         # connection_success = blockchain_node.connect_with_node(node.ip, node.port, reconnect=True)
         connection_success = blockchain_node.connect_with_node(node.ip, node.port, reconnect=True)
         if connection_success:
@@ -107,7 +109,7 @@ def run():
                 break
         else:
             pass
-    # print(f'{connection_count}개 노드와 접속하였습니다.\n')
+    print(f'{connection_count}개 노드와 접속하였습니다.\n')
 
 
 

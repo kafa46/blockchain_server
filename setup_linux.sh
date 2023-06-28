@@ -32,19 +32,15 @@ echo "Activate virtual environment......"
 ls
 echo
 echo
-echo "echo 필요한 파이썬 패키지들을 설치하겠습니다..."
+echo "필요한 파이썬 패키지들을 설치하겠습니다..."
 echo 'Install required python package using ...'
 pip install -r ./p2p_net/requirements.txt
 
-echo   
+echo
 
 echo "모든 설치 및 필요한 환경 설정을 마쳤습니다."
-echo "씨쥬코인(CJU-coin) 설치 및 채굴 안내 튜토리얼 페이지를 실행하고 마치겠습니다."
-echo "Open the tutorial page using default browser"
+echo "터미널에서 다음 명령을 실행하여 서버를 실행해 주세요."
 echo
-sudo apt update
-sudo apt install firefox
-firefox ./p2p_net/tutorial.html
-echo
-echo
+echo ". run_blockchain.sh"
+echo 
 
