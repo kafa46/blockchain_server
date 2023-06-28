@@ -36,14 +36,6 @@ echo "echo 필요한 파이썬 패키지들을 설치하겠습니다..."
 echo 'Install required python package using ...'
 pip install -r ./p2p_net/requirements.txt
 
-
-echo 블록체인 데이터베이스를 초기화 합니다.
-export FLASK_APP=server
-export FLASK_DEBUG=True
-flask db init
-flask db migrate
-flask db upgrade
-echo   
 echo   
 
 echo "모든 설치 및 필요한 환경 설정을 마쳤습니다."

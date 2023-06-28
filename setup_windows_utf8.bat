@@ -90,15 +90,6 @@ echo 패키지 설치 성공!
 echo.
 echo.
 
-echo 블록체인 데이터베이스를 초기화 합니다.
-set FLASK_APP=server
-set FLASK_DEBUG=True
-flask db init
-flask db migrate
-flask db upgrade
-echo.
-echo.
-
 echo 모든 설치 및 필요한 환경 설정을 마쳤습니다.
 echo 씨쥬코인(CJU-coin) 설치 및 채굴 안내 튜토리얼 페이지를 실행하고 마치겠습니다.
 echo Open the tutorial page using default browser

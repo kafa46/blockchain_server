@@ -3,13 +3,13 @@ title CJU-coin
 echo.
 echo.
 echo *** Welcome to CJU-coin Mining System ***
-echo *** ¾¾ÁêÄÚÀÎ(CJU-coin) Ã¤±¼ ½Ã½ºÅÛ¿¡ ¿À½Å°ÍÀ» È¯¿µÇÕ´Ï´Ù. ***
+echo *** ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(CJU-coin) Ã¤ï¿½ï¿½ ï¿½Ã½ï¿½ï¿½Û¿ï¿½ ï¿½ï¿½ï¿½Å°ï¿½ï¿½ï¿½ È¯ï¿½ï¿½ï¿½Õ´Ï´ï¿½. ***
 
 echo.
 echo.
 
-echo Ã¤±¼ ³×Æ®¿öÅ© ¼³Ä¡ ¹× ¼³Á¤À» À§ÇØ¼­´Â °ü¸®ÀÚ ±ÇÇÑÀÌ ÇÊ¿äÇÕ´Ï´Ù.
-echo »ç¿ëÀÚ·ÎºÎÅÍ °ü¸®ÀÚ ±ÇÇÑ »ç¿ëÀ» Çã¶ô¹Þ¾Æ¾ß ÇÕ´Ï´Ù..
+echo Ã¤ï¿½ï¿½ ï¿½ï¿½Æ®ï¿½ï¿½Å© ï¿½ï¿½Ä¡ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ø¼ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê¿ï¿½ï¿½Õ´Ï´ï¿½.
+echo ï¿½ï¿½ï¿½ï¿½Ú·Îºï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Þ¾Æ¾ï¿½ ï¿½Õ´Ï´ï¿½..
 echo To continue setting up and cofiguring, we need "Adminstrator" permission.
 echo Please allow the administrator's previlliage.
 echo.
@@ -17,7 +17,7 @@ echo.
 if not "%1"=="am_admin" (
 	echo.
 	echo We will move you to allow screen Press Enter.
-	set /p=°ü¸®ÀÚ ±ÇÇÑÀ» Çã¶ôÇÏ±â À§ÇØ ÀÌµ¿ÇÏ°Ú½À´Ï´Ù. ¿£ÅÍ¸¦ Ä¡¼¼¿ä.  
+	set /p=ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ìµï¿½ï¿½Ï°Ú½ï¿½ï¿½Ï´ï¿½. ï¿½ï¿½ï¿½Í¸ï¿½ Ä¡ï¿½ï¿½ï¿½ï¿½.  
 )
 echo.
 echo.
@@ -27,12 +27,12 @@ if not "%1"=="am_admin" (powershell start -verb runas '%0' am_admin & exit /b)
 echo.
 echo.
 
-echo ÆÄÀÌ½ã ÆÐÅ°ºñ °ü¸®ÀÚ pip¸¦ ¼³Ä¡ÇÕ´Ï´Ù...
+echo ï¿½ï¿½ï¿½Ì½ï¿½ ï¿½ï¿½Å°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ pipï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½Õ´Ï´ï¿½...
 echo Start upgrade python package manager (pip)...
 python -m pip install --upgrade pip
 echo.
 echo done!
-echo ¼³Ä¡ ¼º°ø!
+echo ï¿½ï¿½Ä¡ ï¿½ï¿½ï¿½ï¿½!
 echo.
 echo.
 
@@ -42,54 +42,46 @@ echo done!
 echo.
 echo.
 
-echo ÇÁ·Î±×·¥ ÆÄÀÏ À§Ä¡·Î ÀÌµ¿ÇØ¾ß ÇÕ´Ï´Ù...
+echo ï¿½ï¿½ï¿½Î±×·ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½Ìµï¿½ï¿½Ø¾ï¿½ ï¿½Õ´Ï´ï¿½...
 echo We need to move into your directory (or folder).
-set /p targetPath=¾¾ÁêÄÚÀÎ(CJU-coin) ¸¶ÀÌ´× ÇÁ·Î±×·¥ ¾ÐÃà Ç¬ Æú´õ °æ·Î¸¦ º¹»ç, ºÙ¿©³Ö±â ÇØ ÁÖ¼¼¿ä: 
+set /p targetPath=ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(CJU-coin) ï¿½ï¿½ï¿½Ì´ï¿½ ï¿½ï¿½ï¿½Î±×·ï¿½ ï¿½ï¿½ï¿½ï¿½ Ç¬ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Î¸ï¿½ ï¿½ï¿½ï¿½ï¿½, ï¿½Ù¿ï¿½ï¿½Ö±ï¿½ ï¿½ï¿½ ï¿½Ö¼ï¿½ï¿½ï¿½: 
 echo your target directory: %targetPath%
 echo.
 echo.
 
-echo ÀÔ·ÂÇÏ½Å °æ·Î·Î ÀÌµ¿ÇÏ°Ú½À´Ï´Ù.
+echo ï¿½Ô·ï¿½ï¿½Ï½ï¿½ ï¿½ï¿½Î·ï¿½ ï¿½Ìµï¿½ï¿½Ï°Ú½ï¿½ï¿½Ï´ï¿½.
 echo Move to your target directory
 cd %targetPath%
 dir
 echo.
-echo ÀÛ¾÷°æ·Î¸¦ È®ÀÎÇß½À´Ï´Ù.
+echo ï¿½Û¾ï¿½ï¿½ï¿½Î¸ï¿½ È®ï¿½ï¿½ï¿½ß½ï¿½ï¿½Ï´ï¿½.
 echo.
 echo.
 
-echo °¡»óÈ¯°æÀ» ¼³Ä¡ÇÏ°Ú½À´Ï´Ù...
+echo ï¿½ï¿½ï¿½ï¿½È¯ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½Ï°Ú½ï¿½ï¿½Ï´ï¿½...
 echo Set up virtual environment......
 echo After setting up "venv" folder will be appeared in your target directory
 virtualenv venv
 echo.
 echo done!
-echo °¡»óÈ¯°æ ¼³Ä¡ ¼º°ø!
+echo ï¿½ï¿½ï¿½ï¿½È¯ï¿½ï¿½ ï¿½ï¿½Ä¡ ï¿½ï¿½ï¿½ï¿½!
 echo.
 echo.
 
-echo ¼³Ä¡µÈ °¡»óÈ¯°æÀ» È°¼ºÈ­ ÇÕ´Ï´Ù.
+echo ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½È¯ï¿½ï¿½ï¿½ï¿½ È°ï¿½ï¿½È­ ï¿½Õ´Ï´ï¿½.
 echo Activate virtual environment......
 call .\venv\Scripts\activate.bat
 cd
 echo.
 echo done!
 echo.
-echo °¡»óÈ¯°æ È°¼ºÈ­ ¼º°ø!
+echo ï¿½ï¿½ï¿½ï¿½È¯ï¿½ï¿½ È°ï¿½ï¿½È­ ï¿½ï¿½ï¿½ï¿½!
 echo.
 echo.
 
 
-echo ºí·ÏÃ¼ÀÎ µ¥ÀÌÅÍº£ÀÌ½º¸¦ ÃÊ±âÈ­ ÇÕ´Ï´Ù.
-set FLASK_APP=server
-set FLASK_DEBUG=True
-flask db init
-flask db migrate
-flask db upgrade
-
-
-echo ¸ðµç ¼³Ä¡ ¹× ÇÊ¿äÇÑ È¯°æ ¼³Á¤À» ¸¶ÃÆ½À´Ï´Ù.
-echo ¾¾ÁêÄÚÀÎ(CJU-coin) ¼³Ä¡ ¹× Ã¤±¼ ¾È³» Æ©Åä¸®¾ó ÆäÀÌÁö¸¦ ½ÇÇàÇÏ°í ¸¶Ä¡°Ú½À´Ï´Ù.
+echo ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ ï¿½ï¿½ ï¿½Ê¿ï¿½ï¿½ï¿½ È¯ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Æ½ï¿½ï¿½Ï´ï¿½.
+echo ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(CJU-coin) ï¿½ï¿½Ä¡ ï¿½ï¿½ Ã¤ï¿½ï¿½ ï¿½È³ï¿½ Æ©ï¿½ä¸®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï°ï¿½ ï¿½ï¿½Ä¡ï¿½Ú½ï¿½ï¿½Ï´ï¿½.
 echo Open the tutorial page using default browser
 echo.
 pause
